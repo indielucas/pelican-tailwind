@@ -1,6 +1,12 @@
 # Pelican docs
 https://getpelican.com/#quickstart
 
+# themes development
+https://docs.getpelican.com/en/latest/themes.html
+
+# 'simple' theme
+https://github.com/getpelican/pelican/tree/main/pelican/themes/simple/templates
+
 # daisyUI
 https://daisyui.com/
 

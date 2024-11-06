@@ -1,0 +1,16 @@
+{
+  "name": "pelican-quickstart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./theme/static/src/style.css -o ./theme/static/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./theme/static/src/style.css -o ./theme/static/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

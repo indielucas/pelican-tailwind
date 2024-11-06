@@ -1,8 +1,82 @@
 {% extends "base.html" %}
+
 {% block content %}
+    <div class="hero bg-base-200 min-h-[600px]">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <img
+                    src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+                <h1 class="text-5xl font-bold">Box Office News!</h1>
+                <p class="py-6">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+        <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+                <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">
+                    Shoes!
+                    <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <div class="badge badge-outline">Fashion</div>
+                    <div class="badge badge-outline">Products</div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+                <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">
+                    Shoes!
+                    <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <div class="badge badge-outline">Fashion</div>
+                    <div class="badge badge-outline">Products</div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+                <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">
+                    Shoes!
+                    <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <div class="badge badge-outline">Fashion</div>
+                    <div class="badge badge-outline">Products</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="space-y-6">
         {% for article in articles_page.object_list %}
-            <article class="bg-white shadow rounded-lg p-6">
+            <article class="bg-white p-6">
                 <h2 class="text-2xl font-bold mb-2">
                     <a href="{{ SITEURL }}/{{ article.url }}" class="text-blue-600 hover:text-blue-800">
                         {{ article.title }}

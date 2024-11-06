@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title }}{% endblock %}
 {% block content %}
-    <article class="bg-white shadow rounded-lg p-6">
-        <h1 class="text-3xl font-bold mb-4">{{ article.title }}</h1>
-        <p class="text-gray-600 mb-6">{{ article.date|strftime('%Y-%m-%d') }}</p>
+    <article class="prose p-10>
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.date|strftime('%Y-%m-%d') }}</p>
         <div class="prose max-w-none">
             {{ article.content }}
         </div>
